@@ -28,10 +28,12 @@
         android:text="Hotel California - Eagles" />
     <ImageView
         android:layout_marginTop="12dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@mipmap/play"
         android:layout_marginLeft="84dp"
+        android:layout_marginRight="20dp"
+
         />
 
 </LinearLayout>

@@ -15,22 +15,37 @@
 
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@mipmap/arrow"
+             android:foregroundGravity="left"
+             />
 
         <TextView
             android:gravity="center"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+android:layout_marginLeft="120dp"
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:text="Top List Philippines"
             android:textAlignment="center"
             android:textColor="#FFF"
+            android:foregroundGravity="center"
+            />
+        <ImageView
+            android:layout_marginLeft="84dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/list"
+            android:foregroundGravity="left"
             />
 
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_marginBottom="64dp"
         android:hapticFeedbackEnabled="true"
@@ -38,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-    </LinearLayout>
+    </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -52,10 +67,10 @@
 
     <LinearLayout
        android:layout_width="match_parent"
-        android:layout_height="65dp"
-
-
-        android:background="#F000"
+        android:layout_height="75dp"
+      android:gravity="center"
+ android:paddingBottom="16dp"
+        android:background="#2D3334"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +83,7 @@
             android:layout_marginStart="8dp"
             android:background="@mipmap/home"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_weight="1"
+            android:layout_margin="16dp"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             />
@@ -76,29 +91,31 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@mipmap/home"
-            android:layout_weight="1"
+            android:background="@mipmap/search"
+            android:layout_margin="16dp"
              />
 
         <ImageView
+            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@mipmap/home"
-            android:layout_weight="1"
+            android:background="@mipmap/browse"
+
             />
 
         <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@mipmap/home" />
+            android:layout_margin="16dp"
+            android:background="@mipmap/radio" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginEnd="8dp"
-            android:background="@mipmap/home"
-            android:layout_weight="1"
+            android:background="@mipmap/library"
+            android:layout_margin="16dp"
             tools:layout_editor_absoluteY="0dp" />
 
 

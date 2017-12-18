@@ -4,24 +4,34 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context="aldwin.tablante.com.spotify.BlankFragment"
-    android:background="#2D3334"
+    android:background="@drawable/title"
+
     >
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:background="@mipmap/arrowup"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
         android:textAlignment="center"
         android:textColor="#E1EAEB"
         android:textSize="20dp"
+        android:layout_marginTop="12dp"
         android:id="@+id/fragmentation"
         android:text="Hotel California - Eagles" />
     <ImageView
+        android:layout_marginTop="12dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@mipmap/play"
+        android:layout_marginLeft="84dp"
+        />
 
 </LinearLayout>

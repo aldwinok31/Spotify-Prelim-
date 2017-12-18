@@ -19,22 +19,22 @@
             android:background="@color/colorPrimary"
             >
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Hello"
                 android:id="@+id/titleview"
                 android:textSize="20dp"
-                android:textColor="#FFF"
+                android:textColor="#E1EAEB"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10sp"
+
                 android:text="dummy"
                 android:id="@+id/description"
                 android:textSize="15dp"
-                android:textColor="#FFF"
+                android:textColor="#E1EAEB"
                 />
         </LinearLayout>
     </android.support.v7.widget.CardView>

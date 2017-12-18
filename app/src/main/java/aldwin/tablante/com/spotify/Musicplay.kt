@@ -10,6 +10,7 @@ import android.app.FragmentContainer
 import android.app.FragmentManager
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.support.v4.app.FragmentActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -29,7 +30,7 @@ class RecipeRecycler (dataMusic: ArrayList<Music>, context: Context) : RecyclerV
     var dataMusic: ArrayList<Music> = dataMusic
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): Musicy {
         var view = LayoutInflater.from(parent!!.context).inflate(R.layout.item, parent, false)
-        var view2 = LayoutInflater.from(parent.context).inflate(R.layout.fragment_blank, parent, false)
+        var view2 = LayoutInflater.from(parent!!.context).inflate(R.layout.fragment_blank, parent, false)
 
         return Musicy(view,view2)
     }
@@ -46,7 +47,8 @@ class RecipeRecycler (dataMusic: ArrayList<Music>, context: Context) : RecyclerV
 
             override fun onMusicClick(view: View, pos: Int) {
                 holder.frageee.text = "" + title
-Frag(mContext).showFragment()
+                holder.titlev.setTextColor(Color.parseColor("green"))
+                        //Frag(mContext).showFragment()
 
 
 

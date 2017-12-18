@@ -9,9 +9,13 @@ import android.support.v7.app.AppCompatActivity
 class Frag(context: Context){
  var   mcontext = context
     fun showFragment(){
-
+val fragment = BlankFragment()
 //        val fragmentTransaction = (mcontext as AppCompatActivity).supportFragmentManager
-val fragmentman = (mcontext as AppCompatActivity).supportFragmentManager.beginTransaction()
+val fragmentman = (mcontext as AppCompatActivity).supportFragmentManager
+        .beginTransaction()
+        fragmentman.replace(R.id.linearLayout3,fragment)
+        fragmentman.show(fragment)
+        fragmentman.commit()
 
 
     }
